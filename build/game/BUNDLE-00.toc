@@ -1,0 +1,3 @@
+([('game',
+   '/Users/joaopedrominella/Documents/ifrs-jogos/implementacao-primeiro-jogo/dist/game',
+   'EXECUTABLE')],)
