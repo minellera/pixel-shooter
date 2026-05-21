@@ -2,68 +2,68 @@
 
 ![Splash Art](assets/splash-art.png)
 
-Jogo de tiro 2D em pixel art desenvolvido com Python e Pygame. O jogador enfrenta ondas de inimigos que surgem pelas bordas do mapa e precisam ser eliminados antes de alcançá-lo. A dificuldade aumenta progressivamente conforme o tempo passa.
+A 2D pixel art shooter developed with Python and Pygame. The player faces waves of enemies that spawn from the edges of the map and must be eliminated before they reach them. Difficulty increases progressively over time.
 
 ---
 
-## Especificações Técnicas
+## Technical Specifications
 
-| Item | Valor |
+| Item | Value |
 |---|---|
-| Linguagem | Python 3 |
-| Biblioteca | Pygame |
-| Resolução | 1200 × 650 px |
-| Tamanho do mapa | 200 × 100 unidades (escala 6×) |
-| Tamanho dos sprites | 8 × 8 px (48 × 48 na tela) |
-| FPS alvo | 60 |
+| Language | Python 3 |
+| Library | Pygame |
+| Resolution | 1200 × 650 px |
+| Map size | 200 × 100 units (6× scale) |
+| Sprite size | 8 × 8 px (48 × 48 on screen) |
+| Target FPS | 60 |
 
-### Parâmetros de jogo
+### Game Parameters
 
-| Parâmetro | Valor |
+| Parameter | Value |
 |---|---|
-| Velocidade do jogador | 60 unidades/s |
-| Velocidade do projétil | 220 unidades/s |
-| Cooldown de disparo | 0,5 s |
-| Velocidade dos inimigos | 28 unidades/s |
-| Intervalo inicial de spawn | 5,0 s |
-| Intervalo mínimo de spawn | 0,8 s |
-| Fator de redução do spawn | 0,93× por inimigo |
+| Player speed | 60 units/s |
+| Projectile speed | 220 units/s |
+| Shoot cooldown | 0.5 s |
+| Enemy speed | 28 units/s |
+| Initial spawn interval | 5.0 s |
+| Minimum spawn interval | 0.8 s |
+| Spawn reduction factor | 0.93× per enemy |
 
-### Estrutura do projeto
+### Project Structure
 
 ```
 implementacao-primeiro-jogo/
-├── game.py           # Código-fonte principal
+├── game.py           # Main source code
 └── assets/
-    ├── player.png        # Sprite do jogador
-    ├── enemy01.png       # Sprite do inimigo
-    ├── splash-art.png    # Arte do jogo
-    ├── sound-start.mp3   # Som de início de partida
-    ├── sound-laser.mp3   # Som de disparo
-    └── sound-game-over.mp3  # Som de fim de jogo
+    ├── player.png        # Player sprite
+    ├── enemy01.png       # Enemy sprite
+    ├── splash-art.png    # Game art
+    ├── sound-start.mp3   # Match start sound
+    ├── sound-laser.mp3   # Shoot sound
+    └── sound-game-over.mp3  # Game over sound
 ```
 
 ---
 
-## Como rodar
+## How to Run
 
-### Pré-requisitos
+### Prerequisites
 
-- Python 3.8 ou superior
+- Python 3.8 or higher
 - pip
 
-### Instalação
+### Installation
 
 ```bash
-# Clone o repositório
-git clone <url-do-repositorio>
+# Clone the repository
+git clone <repository-url>
 cd implementacao-primeiro-jogo
 
-# Instale a dependência
+# Install the dependency
 pip install pygame
 ```
 
-### Executando o jogo
+### Running the Game
 
 ```bash
 python game.py
@@ -71,18 +71,18 @@ python game.py
 
 ---
 
-## Controles
+## Controls
 
-| Tecla | Ação |
+| Key | Action |
 |---|---|
-| `W` `A` `S` `D` | Mover o jogador |
-| `↑` `↓` `←` `→` | Atirar nas 4 direções |
+| `W` `A` `S` `D` | Move the player |
+| `↑` `↓` `←` `→` | Shoot in 4 directions |
 
 ---
 
-## Mecânicas
+## Mechanics
 
-- **Spawn progressivo** — inimigos surgem pelas bordas do mapa e a frequência de aparecimento aumenta a cada inimigo gerado.
-- **Colisão** — um inimigo que tocar o jogador encerra a partida.
-- **Pontuação** — cada inimigo eliminado vale 1 ponto.
-- **Telas** — Menu → Jogo → Game Over → Menu.
+- **Progressive spawn** — enemies spawn from the edges of the map and the spawn frequency increases with each new enemy generated.
+- **Collision** — an enemy that touches the player ends the match.
+- **Score** — each eliminated enemy is worth 1 point.
+- **Screens** — Menu → Game → Game Over → Menu.
